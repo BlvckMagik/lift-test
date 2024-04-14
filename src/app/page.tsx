@@ -5,6 +5,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "@/theme/index";
 import App from "@/app/App";
 import { store } from "@/shared/store";
+import { Analytics } from "@vercel/analytics/react";
 
 import * as Styled from "./page.styled";
 
@@ -15,6 +16,8 @@ export default function Home() {
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <Styled.Page>
+            <Analytics />
+
             <App />
           </Styled.Page>
         </ThemeProvider>
