@@ -22,7 +22,7 @@ export const Button = styled(MUIButton)(({ theme }) => ({
   color: theme.palette.secondary.main,
   borderRadius: "8px",
   position: "fixed",
-  bottom: "80px",
+  bottom: "50px",
 
   "& .Mui-disabled": {
     backgroundColor: theme.palette.primary.light,
